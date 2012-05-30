@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B610582156AE1C80035307B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B610581156AE1C80035307B /* UIKit.framework */; };
+		4B610584156AE1C80035307B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B610583156AE1C80035307B /* Foundation.framework */; };
+		4B610586156AE1C80035307B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B610585156AE1C80035307B /* CoreGraphics.framework */; };
+		4B61058C156AE1C80035307B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B61058A156AE1C80035307B /* InfoPlist.strings */; };
+		4B61058E156AE1C80035307B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61058D156AE1C80035307B /* main.m */; };
+		4B610592156AE1C80035307B /* AVUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B610591156AE1C80035307B /* AVUAppDelegate.m */; };
+		4B610595156AE1C80035307B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B610593156AE1C80035307B /* MainStoryboard_iPhone.storyboard */; };
+		4B610598156AE1C80035307B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B610596156AE1C80035307B /* MainStoryboard_iPad.storyboard */; };
+		4B61059B156AE1C80035307B /* AVUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B61059A156AE1C80035307B /* AVUViewController.m */; };
+		4B6105A8156AE9AC0035307B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6105A7156AE9AC0035307B /* MobileCoreServices.framework */; };
+		4B6105BD156AEF9F0035307B /* libwatoolkitios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6105AA156AEF9F0035307B /* libwatoolkitios.a */; };
+		4B6105BF156AF16B0035307B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6105BE156AF16B0035307B /* libxml2.2.dylib */; };
+		4B6105CB156AF2840035307B /* ServiceCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105C6156AF2840035307B /* ServiceCall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105CC156AF2840035307B /* UIViewController+ShowError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105C8156AF2840035307B /* UIViewController+ShowError.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105CD156AF2840035307B /* WAConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105CA156AF2840035307B /* WAConfiguration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105D2156AF2F00035307B /* TableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105D0156AF2F00035307B /* TableListController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105D3156AF2F00035307B /* TableListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6105D1156AF2F00035307B /* TableListController.xib */; };
+		4B6105D9156AF3AB0035307B /* EntityListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105D5156AF3AB0035307B /* EntityListController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105DA156AF3AB0035307B /* EntityListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6105D6156AF3AB0035307B /* EntityListController.xib */; };
+		4B6105DB156AF3AB0035307B /* EntityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105D8156AF3AB0035307B /* EntityTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105DF156AF42E0035307B /* BlobViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105DD156AF42D0035307B /* BlobViewerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105E0156AF42E0035307B /* BlobViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6105DE156AF42D0035307B /* BlobViewerController.xib */; };
+		4B6105E4156AF6990035307B /* CreateTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6105E2156AF6990035307B /* CreateTableController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B6105E5156AF6990035307B /* CreateTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6105E3156AF6990035307B /* CreateTableController.xib */; };
+		4BA44CC7156C2D7700A2F22D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA44CC6156C2D7700A2F22D /* MediaPlayer.framework */; };
+		4BA44CC9156C2E0600A2F22D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA44CC8156C2E0600A2F22D /* AVFoundation.framework */; };
+		4BA44CCB156C311900A2F22D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CCA156C311900A2F22D /* logo.png */; };
+		4BA44CCE156C353A00A2F22D /* browse.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CCC156C353A00A2F22D /* browse.png */; };
+		4BA44CCF156C353A00A2F22D /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CCD156C353A00A2F22D /* upload.png */; };
+		4BA44CD1156C367E00A2F22D /* shade.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CD0156C367E00A2F22D /* shade.png */; };
+		4BA44CD4156C399500A2F22D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CD2156C399500A2F22D /* Icon.png */; };
+		4BA44CD5156C399500A2F22D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA44CD3156C399500A2F22D /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B61057D156AE1C80035307B /* AzureVideoUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureVideoUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B610581156AE1C80035307B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B610583156AE1C80035307B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B610585156AE1C80035307B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B610589156AE1C80035307B /* AzureVideoUploader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AzureVideoUploader-Info.plist"; sourceTree = "<group>"; };
+		4B61058B156AE1C80035307B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B61058D156AE1C80035307B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B61058F156AE1C80035307B /* AzureVideoUploader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AzureVideoUploader-Prefix.pch"; sourceTree = "<group>"; };
+		4B610590156AE1C80035307B /* AVUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVUAppDelegate.h; sourceTree = "<group>"; };
+		4B610591156AE1C80035307B /* AVUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVUAppDelegate.m; sourceTree = "<group>"; };
+		4B610594156AE1C80035307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4B610597156AE1C80035307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4B610599156AE1C80035307B /* AVUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVUViewController.h; sourceTree = "<group>"; };
+		4B61059A156AE1C80035307B /* AVUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVUViewController.m; sourceTree = "<group>"; };
+		4B6105A7156AE9AC0035307B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4B6105AA156AEF9F0035307B /* libwatoolkitios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwatoolkitios.a; sourceTree = "<group>"; };
+		4B6105AC156AEF9F0035307B /* WAAuthenticationCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAuthenticationCredential.h; sourceTree = "<group>"; };
+		4B6105AD156AEF9F0035307B /* WABlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WABlob.h; sourceTree = "<group>"; };
+		4B6105AE156AEF9F0035307B /* WABlobContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WABlobContainer.h; sourceTree = "<group>"; };
+		4B6105AF156AEF9F0035307B /* WABlobContainerFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WABlobContainerFetchRequest.h; sourceTree = "<group>"; };
+		4B6105B0156AEF9F0035307B /* WABlobFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WABlobFetchRequest.h; sourceTree = "<group>"; };
+		4B6105B1156AEF9F0035307B /* WACloudAccessControlClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WACloudAccessControlClient.h; sourceTree = "<group>"; };
+		4B6105B2156AEF9F0035307B /* WACloudAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WACloudAccessToken.h; sourceTree = "<group>"; };
+		4B6105B3156AEF9F0035307B /* WACloudStorageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WACloudStorageClient.h; sourceTree = "<group>"; };
+		4B6105B4156AEF9F0035307B /* WACloudStorageClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WACloudStorageClientDelegate.h; sourceTree = "<group>"; };
+		4B6105B5156AEF9F0035307B /* WAQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAQueue.h; sourceTree = "<group>"; };
+		4B6105B6156AEF9F0035307B /* WAQueueFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAQueueFetchRequest.h; sourceTree = "<group>"; };
+		4B6105B7156AEF9F0035307B /* WAQueueMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAQueueMessage.h; sourceTree = "<group>"; };
+		4B6105B8156AEF9F0035307B /* WAQueueMessageFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAQueueMessageFetchRequest.h; sourceTree = "<group>"; };
+		4B6105B9156AEF9F0035307B /* WAResultContinuation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAResultContinuation.h; sourceTree = "<group>"; };
+		4B6105BA156AEF9F0035307B /* WATableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WATableEntity.h; sourceTree = "<group>"; };
+		4B6105BB156AEF9F0035307B /* WATableFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WATableFetchRequest.h; sourceTree = "<group>"; };
+		4B6105BC156AEF9F0035307B /* WAToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAToolkit.h; sourceTree = "<group>"; };
+		4B6105BE156AF16B0035307B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		4B6105C5156AF2840035307B /* ServiceCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCall.h; sourceTree = "<group>"; };
+		4B6105C6156AF2840035307B /* ServiceCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCall.m; sourceTree = "<group>"; };
+		4B6105C7156AF2840035307B /* UIViewController+ShowError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowError.h"; sourceTree = "<group>"; };
+		4B6105C8156AF2840035307B /* UIViewController+ShowError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShowError.m"; sourceTree = "<group>"; };
+		4B6105C9156AF2840035307B /* WAConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAConfiguration.h; sourceTree = "<group>"; };
+		4B6105CA156AF2840035307B /* WAConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAConfiguration.m; sourceTree = "<group>"; };
+		4B6105CF156AF2F00035307B /* TableListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListController.h; sourceTree = "<group>"; };
+		4B6105D0156AF2F00035307B /* TableListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableListController.m; sourceTree = "<group>"; };
+		4B6105D1156AF2F00035307B /* TableListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableListController.xib; sourceTree = "<group>"; };
+		4B6105D4156AF3AB0035307B /* EntityListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityListController.h; sourceTree = "<group>"; };
+		4B6105D5156AF3AB0035307B /* EntityListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityListController.m; sourceTree = "<group>"; };
+		4B6105D6156AF3AB0035307B /* EntityListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntityListController.xib; sourceTree = "<group>"; };
+		4B6105D7156AF3AB0035307B /* EntityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityTableViewCell.h; sourceTree = "<group>"; };
+		4B6105D8156AF3AB0035307B /* EntityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityTableViewCell.m; sourceTree = "<group>"; };
+		4B6105DC156AF42D0035307B /* BlobViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobViewerController.h; sourceTree = "<group>"; };
+		4B6105DD156AF42D0035307B /* BlobViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobViewerController.m; sourceTree = "<group>"; };
+		4B6105DE156AF42D0035307B /* BlobViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlobViewerController.xib; sourceTree = "<group>"; };
+		4B6105E1156AF6990035307B /* CreateTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTableController.h; sourceTree = "<group>"; };
+		4B6105E2156AF6990035307B /* CreateTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTableController.m; sourceTree = "<group>"; };
+		4B6105E3156AF6990035307B /* CreateTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateTableController.xib; sourceTree = "<group>"; };
+		4BA44CC6156C2D7700A2F22D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4BA44CC8156C2E0600A2F22D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BA44CCA156C311900A2F22D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4BA44CCC156C353A00A2F22D /* browse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browse.png; sourceTree = "<group>"; };
+		4BA44CCD156C353A00A2F22D /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
+		4BA44CD0156C367E00A2F22D /* shade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shade.png; sourceTree = "<group>"; };
+		4BA44CD2156C399500A2F22D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4BA44CD3156C399500A2F22D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B61057A156AE1C80035307B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA44CC9156C2E0600A2F22D /* AVFoundation.framework in Frameworks */,
+				4BA44CC7156C2D7700A2F22D /* MediaPlayer.framework in Frameworks */,
+				4B6105BF156AF16B0035307B /* libxml2.2.dylib in Frameworks */,
+				4B6105A8156AE9AC0035307B /* MobileCoreServices.framework in Frameworks */,
+				4B610582156AE1C80035307B /* UIKit.framework in Frameworks */,
+				4B610584156AE1C80035307B /* Foundation.framework in Frameworks */,
+				4B610586156AE1C80035307B /* CoreGraphics.framework in Frameworks */,
+				4B6105BD156AEF9F0035307B /* libwatoolkitios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B0C51A3157690220097AD2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B0C51A51576902C0097AD2A /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B0C51A51576902C0097AD2A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4BA44CCA156C311900A2F22D /* logo.png */,
+				4BA44CD2156C399500A2F22D /* Icon.png */,
+				4BA44CD3156C399500A2F22D /* Icon@2x.png */,
+				4BA44CCC156C353A00A2F22D /* browse.png */,
+				4BA44CD0156C367E00A2F22D /* shade.png */,
+				4BA44CCD156C353A00A2F22D /* upload.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4B610572156AE1C80035307B = {
+			isa = PBXGroup;
+			children = (
+				4B610587156AE1C80035307B /* AzureVideoUploader */,
+				4B610580156AE1C80035307B /* Frameworks */,
+				4B61057E156AE1C80035307B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B61057E156AE1C80035307B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B61057D156AE1C80035307B /* AzureVideoUploader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B610580156AE1C80035307B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA44CC8156C2E0600A2F22D /* AVFoundation.framework */,
+				4BA44CC6156C2D7700A2F22D /* MediaPlayer.framework */,
+				4B6105BE156AF16B0035307B /* libxml2.2.dylib */,
+				4B6105A7156AE9AC0035307B /* MobileCoreServices.framework */,
+				4B610581156AE1C80035307B /* UIKit.framework */,
+				4B610583156AE1C80035307B /* Foundation.framework */,
+				4B610585156AE1C80035307B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B610587156AE1C80035307B /* AzureVideoUploader */ = {
+			isa = PBXGroup;
+			children = (
+				4B610590156AE1C80035307B /* AVUAppDelegate.h */,
+				4B610591156AE1C80035307B /* AVUAppDelegate.m */,
+				4B610593156AE1C80035307B /* MainStoryboard_iPhone.storyboard */,
+				4B610596156AE1C80035307B /* MainStoryboard_iPad.storyboard */,
+				4B610599156AE1C80035307B /* AVUViewController.h */,
+				4B61059A156AE1C80035307B /* AVUViewController.m */,
+				4B0C51A3157690220097AD2A /* Resources */,
+				4B6105CE156AF2F00035307B /* azure */,
+				4B6105C4156AF2840035307B /* Configuration */,
+				4B6105A9156AEF9F0035307B /* aLib */,
+				4B610588156AE1C80035307B /* Supporting Files */,
+			);
+			path = AzureVideoUploader;
+			sourceTree = "<group>";
+		};
+		4B610588156AE1C80035307B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B610589156AE1C80035307B /* AzureVideoUploader-Info.plist */,
+				4B61058A156AE1C80035307B /* InfoPlist.strings */,
+				4B61058D156AE1C80035307B /* main.m */,
+				4B61058F156AE1C80035307B /* AzureVideoUploader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B6105A9156AEF9F0035307B /* aLib */ = {
+			isa = PBXGroup;
+			children = (
+				4B6105AA156AEF9F0035307B /* libwatoolkitios.a */,
+				4B6105AB156AEF9F0035307B /* watoolkitios-lib */,
+			);
+			path = aLib;
+			sourceTree = "<group>";
+		};
+		4B6105AB156AEF9F0035307B /* watoolkitios-lib */ = {
+			isa = PBXGroup;
+			children = (
+				4B6105AC156AEF9F0035307B /* WAAuthenticationCredential.h */,
+				4B6105AD156AEF9F0035307B /* WABlob.h */,
+				4B6105AE156AEF9F0035307B /* WABlobContainer.h */,
+				4B6105AF156AEF9F0035307B /* WABlobContainerFetchRequest.h */,
+				4B6105B0156AEF9F0035307B /* WABlobFetchRequest.h */,
+				4B6105B1156AEF9F0035307B /* WACloudAccessControlClient.h */,
+				4B6105B2156AEF9F0035307B /* WACloudAccessToken.h */,
+				4B6105B3156AEF9F0035307B /* WACloudStorageClient.h */,
+				4B6105B4156AEF9F0035307B /* WACloudStorageClientDelegate.h */,
+				4B6105B5156AEF9F0035307B /* WAQueue.h */,
+				4B6105B6156AEF9F0035307B /* WAQueueFetchRequest.h */,
+				4B6105B7156AEF9F0035307B /* WAQueueMessage.h */,
+				4B6105B8156AEF9F0035307B /* WAQueueMessageFetchRequest.h */,
+				4B6105B9156AEF9F0035307B /* WAResultContinuation.h */,
+				4B6105BA156AEF9F0035307B /* WATableEntity.h */,
+				4B6105BB156AEF9F0035307B /* WATableFetchRequest.h */,
+				4B6105BC156AEF9F0035307B /* WAToolkit.h */,
+			);
+			path = "watoolkitios-lib";
+			sourceTree = "<group>";
+		};
+		4B6105C4156AF2840035307B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4B6105C5156AF2840035307B /* ServiceCall.h */,
+				4B6105C6156AF2840035307B /* ServiceCall.m */,
+				4B6105C7156AF2840035307B /* UIViewController+ShowError.h */,
+				4B6105C8156AF2840035307B /* UIViewController+ShowError.m */,
+				4B6105C9156AF2840035307B /* WAConfiguration.h */,
+				4B6105CA156AF2840035307B /* WAConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		4B6105CE156AF2F00035307B /* azure */ = {
+			isa = PBXGroup;
+			children = (
+				4B6105E1156AF6990035307B /* CreateTableController.h */,
+				4B6105E2156AF6990035307B /* CreateTableController.m */,
+				4B6105E3156AF6990035307B /* CreateTableController.xib */,
+				4B6105DC156AF42D0035307B /* BlobViewerController.h */,
+				4B6105DD156AF42D0035307B /* BlobViewerController.m */,
+				4B6105DE156AF42D0035307B /* BlobViewerController.xib */,
+				4B6105D4156AF3AB0035307B /* EntityListController.h */,
+				4B6105D5156AF3AB0035307B /* EntityListController.m */,
+				4B6105D6156AF3AB0035307B /* EntityListController.xib */,
+				4B6105D7156AF3AB0035307B /* EntityTableViewCell.h */,
+				4B6105D8156AF3AB0035307B /* EntityTableViewCell.m */,
+				4B6105CF156AF2F00035307B /* TableListController.h */,
+				4B6105D0156AF2F00035307B /* TableListController.m */,
+				4B6105D1156AF2F00035307B /* TableListController.xib */,
+			);
+			path = azure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B61057C156AE1C80035307B /* AzureVideoUploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B61059E156AE1C80035307B /* Build configuration list for PBXNativeTarget "AzureVideoUploader" */;
+			buildPhases = (
+				4B610579156AE1C80035307B /* Sources */,
+				4B61057A156AE1C80035307B /* Frameworks */,
+				4B61057B156AE1C80035307B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureVideoUploader;
+			productName = AzureVideoUploader;
+			productReference = 4B61057D156AE1C80035307B /* AzureVideoUploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B610574156AE1C80035307B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AVU;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Adam Burkepile";
+			};
+			buildConfigurationList = 4B610577156AE1C80035307B /* Build configuration list for PBXProject "AzureVideoUploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B610572156AE1C80035307B;
+			productRefGroup = 4B61057E156AE1C80035307B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B61057C156AE1C80035307B /* AzureVideoUploader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B61057B156AE1C80035307B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B61058C156AE1C80035307B /* InfoPlist.strings in Resources */,
+				4B610595156AE1C80035307B /* MainStoryboard_iPhone.storyboard in Resources */,
+				4B610598156AE1C80035307B /* MainStoryboard_iPad.storyboard in Resources */,
+				4B6105D3156AF2F00035307B /* TableListController.xib in Resources */,
+				4B6105DA156AF3AB0035307B /* EntityListController.xib in Resources */,
+				4B6105E0156AF42E0035307B /* BlobViewerController.xib in Resources */,
+				4B6105E5156AF6990035307B /* CreateTableController.xib in Resources */,
+				4BA44CCB156C311900A2F22D /* logo.png in Resources */,
+				4BA44CCE156C353A00A2F22D /* browse.png in Resources */,
+				4BA44CCF156C353A00A2F22D /* upload.png in Resources */,
+				4BA44CD1156C367E00A2F22D /* shade.png in Resources */,
+				4BA44CD4156C399500A2F22D /* Icon.png in Resources */,
+				4BA44CD5156C399500A2F22D /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B610579156AE1C80035307B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B61058E156AE1C80035307B /* main.m in Sources */,
+				4B610592156AE1C80035307B /* AVUAppDelegate.m in Sources */,
+				4B61059B156AE1C80035307B /* AVUViewController.m in Sources */,
+				4B6105CB156AF2840035307B /* ServiceCall.m in Sources */,
+				4B6105CC156AF2840035307B /* UIViewController+ShowError.m in Sources */,
+				4B6105CD156AF2840035307B /* WAConfiguration.m in Sources */,
+				4B6105D2156AF2F00035307B /* TableListController.m in Sources */,
+				4B6105D9156AF3AB0035307B /* EntityListController.m in Sources */,
+				4B6105DB156AF3AB0035307B /* EntityTableViewCell.m in Sources */,
+				4B6105DF156AF42E0035307B /* BlobViewerController.m in Sources */,
+				4B6105E4156AF6990035307B /* CreateTableController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B61058A156AE1C80035307B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B61058B156AE1C80035307B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B610593156AE1C80035307B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B610594156AE1C80035307B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4B610596156AE1C80035307B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B610597156AE1C80035307B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B61059C156AE1C80035307B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B61059D156AE1C80035307B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B61059F156AE1C80035307B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AzureVideoUploader/AzureVideoUploader-Prefix.pch";
+				INFOPLIST_FILE = "AzureVideoUploader/AzureVideoUploader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AzureVideoUploader/aLib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B6105A0156AE1C80035307B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AzureVideoUploader/AzureVideoUploader-Prefix.pch";
+				INFOPLIST_FILE = "AzureVideoUploader/AzureVideoUploader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AzureVideoUploader/aLib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B610577156AE1C80035307B /* Build configuration list for PBXProject "AzureVideoUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B61059C156AE1C80035307B /* Debug */,
+				4B61059D156AE1C80035307B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B61059E156AE1C80035307B /* Build configuration list for PBXNativeTarget "AzureVideoUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B61059F156AE1C80035307B /* Debug */,
+				4B6105A0156AE1C80035307B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B610574156AE1C80035307B /* Project object */;
+}
